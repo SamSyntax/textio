@@ -1,9 +1,11 @@
 package main
 
-import "fmt"
+import sever "github.com/samsyntax/textio/internal/server"
+
+
 
 
 func main() {
-  fmt.Println("Hello World!")
-
+  sever.StartServer()
 }
+

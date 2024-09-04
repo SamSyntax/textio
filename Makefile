@@ -5,7 +5,7 @@ build:
 	go build -o tmp/main cmd/main.go
 
 run:
-	tmp/main
+	go run cmd/main.go
 
 dev:
 	go build -o tmp/main cmd/main.go && /tmp/main
