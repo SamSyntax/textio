@@ -1,11 +1,12 @@
-package internal
+package handlers 
+
 
 import (
 	"net/http"
 
-	internal "github.com/samsyntax/textio/internal/utils"
+	"github.com/samsyntax/textio/internal/utils"
 )
 
 func HandlerReadiness(w http.ResponseWriter, r *http.Request){
-  internal.RespondWithJSON(w, 200, struct{Key string}{Key: "Ok"})
+  utils.RespondWithJSON(w, 200, struct{Key string}{Key: "Ok"})
 }

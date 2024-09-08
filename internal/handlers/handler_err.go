@@ -1,12 +1,11 @@
-
-package internal
+package handlers 
 
 import (
 	"net/http"
 
-	internal "github.com/samsyntax/textio/internal/utils"
+	 "github.com/samsyntax/textio/internal/utils"
 )
 
 func HandlerErr(w http.ResponseWriter, r *http.Request){
-  internal.RespondWithError(w, 200, "Something went wrong")
+  utils.RespondWithError(w, 200, "Something went wrong")
 }
